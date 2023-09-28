@@ -5,7 +5,7 @@ import styles from './navbar.module.css'
 function Navbar() {
     const [selectedItem, setSelectedItem] = useState('Inicio');
 
-    const handleItemClick = (item) => {
+    const handleItemClick = (item,id) => {
         setSelectedItem(item);
         scrollToSection(id);
     };
